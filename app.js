@@ -9,6 +9,7 @@ const botonVaciar = document.getElementById('vaciar-carrito')
 
 const contadorCarrito = document.getElementById('contadorCarrito')
 
+const botonComprar =document.getElementById('comprar')
 
 const cantidad = document.getElementById('cantidad')
 const precioTotal = document.getElementById('precioTotal')
@@ -28,6 +29,18 @@ botonVaciar.addEventListener('click', () => {
     actualizarCarrito()
 })
 
+botonComprar.addEventListener('click', () =>{
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'GRACIAS POR TU COMPRA',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    
+    carrito.length = 0
+    actualizarCarrito()
+})
 
 stockProductos.forEach((producto) => {
     const div = document.createElement('div')
@@ -63,6 +76,32 @@ const agregarAlCarrito = (prodId) => {
             if (prod.id === prodId){
                 prod.cantidad++
             }
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Se agrego al carrito',
+                showConfirmButton: false,
+                timer: 1500
+              })
+        })
+    } else { 
+        const item = stockProductos.find((prod) => prod.id === prodId)
+        carrito.push(item)
+    }
+    
+    actualizarCarrito() 
+}
+
+const eliminarDelCarrito = (prodId) => {
+
+    const existe = carrito.find (prod => prod.id === prodId) //comprobar si el elemento ya existe en el carro
+
+    if (existe){ 
+        const prod = carrito.map (prod => { 
+            if (prod.id === prodId){
+                prod.cantidad--
+            }
+            
         })
     } else { 
         const item = stockProductos.find((prod) => prod.id === prodId)
@@ -73,16 +112,6 @@ const agregarAlCarrito = (prodId) => {
 }
 
 
-
-const eliminarDelCarrito = (prodId) => {
-    const item = carrito.find((prod) => prod.id === prodId)
-
-    const indice = carrito.indexOf(item) 
-
-    carrito.splice(indice, 1) 
-    actualizarCarrito() 
-    console.log(carrito)
-}
 
 const actualizarCarrito = () => {
    
@@ -133,7 +162,7 @@ const actualizarCarrito = () => {
       const button = document.getElementById(`agregar${producto.id}`);
     
 
-boton.addEventListener("click", () => {
+    boton.addEventListener("click", () => {
     Swal.fire({
         position: 'top-end',
         icon: 'success',
@@ -152,6 +181,9 @@ fetch("./producto.json")
 .then(function(data){
     console.log(data);
 });
+
+
+
 
 
 

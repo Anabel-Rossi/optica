@@ -88,7 +88,17 @@ p {
     transition-duration: .3s;
 }
     
+.comprar-productos{
+    background-color: #fff;
+    color: blueviolet;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px;
+    border: solid 2px violet;
+    text-transform: uppercase;
+    
 
+}
 .boton-agregar:focus {
     outline: none;
 }
