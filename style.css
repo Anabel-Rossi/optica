@@ -7,15 +7,15 @@
 :root {
 	--purple-dark: #170312;
 	--purple-medium: #33032d;
-    --purple-light: #531253;
-    --gray-light: #eaeaea;
-    --white: #f4fffd;
+	--purple-light: #531253;
+	--gray-light: #eaeaea;
+	--white: #f4fffd;
 }
 
 body {
 	font-size: 25px;
-	font-family: Poppins; 
-    
+	font-family: Poppins;
+
 }
 
 p {
@@ -42,16 +42,16 @@ p {
 }
 
 .contenido-header .texto {
-    margin-top: 0%;
+	margin-top: 0%;
 	width: calc(100vw - 20px);
 	height: 120vh;
 	font-size: 100px;
 	font-weight: 400;
-    
-	font-family:'Noto Serif', serif;
+
+	font-family: 'Noto Serif', serif;
 	font-style: italic;
 	display: flex;
-	align-items:center;
+	align-items: center;
 	justify-content: center;
 	color: palevioletred;
 	mix-blend-mode: multiply;
@@ -183,7 +183,7 @@ p {
 	transition: .5s ease;
 }
 
-.productos .producto:hover .overlay{
+.productos .producto:hover .overlay {
 	width: 100%;
 	opacity: .8;
 }
@@ -209,7 +209,7 @@ p {
 	font-size: 16px;
 	border: 2px solid transparent;
 	transition: .3s ease;
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .productos .btn-productos:hover {

@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
+
 img {
     width: 100%;
     margin-bottom: 10px;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -20,15 +22,17 @@ header {
     margin-bottom: 20px;
     background-color: rgb(233, 225, 225);
 }
+
 h1 {
     color: black;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 50px;
-    
+
 }
+
 #boton-carrito {
-   border: none;
+    border: none;
     color: black;
     font-size: 20px;
     background-color: #e4e4e8;
@@ -38,12 +42,14 @@ h1 {
     transition: all .3s;
 
 }
+
 #boton-carrito:hover {
     transform: translateY(15px);
     cursor: pointer;
     color: violet;
-    
+
 }
+
 #boton-carrito:focus {
     outline: none;
 }
@@ -60,6 +66,7 @@ h1 {
 p {
     line-height: 1.8;
 }
+
 .producto {
     max-width: 20%;
     padding: 10px;
@@ -68,9 +75,11 @@ p {
     box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
     position: relative;
 }
+
 .precioProducto {
     font-weight: 700;
 }
+
 .boton-agregar {
     background-color: #fff;
     color: blueviolet;
@@ -79,16 +88,17 @@ p {
     padding: 5px;
     border: solid 2px violet;
     text-transform: uppercase;
-    
+
 }
+
 .boton-agregar:hover {
     background: #fff;
     color: black;
     border: solid 2px blueviolet;
     transition-duration: .3s;
 }
-    
-.comprar-productos{
+
+.comprar-productos {
     background-color: #fff;
     color: blueviolet;
     font-size: 12px;
@@ -96,9 +106,10 @@ p {
     padding: 5px;
     border: solid 2px violet;
     text-transform: uppercase;
-    
+
 
 }
+
 .boton-agregar:focus {
     outline: none;
 }
@@ -139,6 +150,7 @@ p {
     color: violet;
     padding-bottom: 5px;
 }
+
 .modal-carrito #carritoCerrar {
     position: absolute;
     top: 15px;
@@ -148,15 +160,18 @@ p {
     border: none;
     background-color: white;
 }
+
 .modal-carrito #carritoCerrar:hover {
     cursor: pointer;
 }
+
 .modal-carrito #carritoCerrar:focus {
     outline: none;
 }
+
 .modal-carrito .precioProducto {
     padding-top: 10px;
-    
+
 }
 
 .productoEnCarrito {
@@ -168,6 +183,7 @@ p {
     display: flex;
     justify-content: space-between;
 }
+
 .productoEnCarrito:hover {
     border-left: 5px solid violet;
 }
@@ -182,52 +198,59 @@ p {
 .boton-eliminar:hover {
     cursor: pointer;
 }
+
 .boton-eliminar:focus {
     outline: none;
 }
 
-/*copia*/
 
-.menu a{
+
+.menu a {
     text-decoration: none;
     color: violet;
     font-size: 18px;
     display: inline-block;
-	padding: 10px 30px;
-	margin: 0 10px;
-	transition: .5s ease all;
-	text-decoration: none;
+    padding: 10px 30px;
+    margin: 0 10px;
+    transition: .5s ease all;
+    text-decoration: none;
 }
+
 .menu a:hover {
-	transform: translateY(18px);
-	background-color:gray;
+    transform: translateY(18px);
+    background-color: gray;
 }
-header{
+
+header {
     background-color: #e4e4e8;
     padding-top: 18px;
     padding-bottom: 18px;
     box-shadow: 0 7px 8px -3px grey;
-    
+
     width: 100%;
     margin-top: -10px;
     z-index: 99;
 }
-.container{
+
+.container {
     max-width: 1200px;
     text-align: center;
     margin: auto;
 }
-.header-section{
+
+.header-section {
     display: flex;
     justify-content: space-between;
     margin: auto;
     align-items: center;
     position: relative;
 }
-.header-section div{
+
+.header-section div {
     position: relative;
 }
-.header-section p{
+
+.header-section p {
     position: absolute;
     top: -24px;
     right: -8px;
@@ -239,11 +262,13 @@ header{
     font-family: system-ui;
     line-height: 18px;
 }
-.header-section .container a{
+
+.header-section .container a {
     text-decoration: none;
     color: #000;
 }
-.logo{
+
+.logo {
     width: 80px;
     height: 80px;
     cursor: pointer;
